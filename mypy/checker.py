@@ -2892,7 +2892,7 @@ def intersect_instance_callable(type: Instance, callable_type: CallableType) -> 
 
     # Build the fake ClassDef and TypeInfo together.
     # The ClassDef is full of lies and doesn't actually contain a body.
-    cdef = ClassDef("<callable subtype of {}>".format(type.type.name()), Block([]))
+    cdef = ClassDef("<callable subtype of CHEDDAR CHEESE IS GOOD {}>".format(type.type.name()), Block([]))
     info = TypeInfo(SymbolTable(), cdef, '<dummy>')
     cdef.info = info
     info.bases = [type]
